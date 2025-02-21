@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+.entire-news-container{
+    background-color: rgb(190, 190, 190);
+}
+
+.news {
+    background-color: rgb(230, 230, 230);
+    padding: 20px;
+    width: 75%;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 34px;
+    color: black;
+  }
+  
+  .news-img {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+  }
+  
+  .news-container {
+    background-color: rgb(230, 230, 230);
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    color: black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-bottom: 50px;
+    width: 75%;
+    margin: 0 auto;
+  }
+  
+  .news-item {
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    flex-flow: column;
+    width: 16vw;
+    margin: 15px;
+    height: auto;
+  }
+
+  .news-img-container{
+    transition: transform 0.3s ease;
+  }
+
+  .news-img-container:hover {
+    transform: scale(1.06);
+  }
+  
+  .news-title {
+    font-weight: 800;
+    font-size: 1vw;
+    color: rgb(0, 0, 0);
+  }
+  
+  .news-content {
+    font-weight: 500;
+    font-size: 0.8vw;
+    color: rgb(0, 0, 0);
+    padding-top: 20px;
+  }
