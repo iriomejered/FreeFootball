@@ -1,15 +1,15 @@
 import Header from "../../components/header/Header"
 import Footer from "../../components/footer/Footer"
-import News from "../../components/news/News"
+import ShirtsCards from "../../components/shirts/ShirtsCards"
 
-function Home() {
+function Shirts() {
   return (
     <>
     <Header/>
-    <News/>
+    <ShirtsCards/>
     <Footer/>
     </>
   )
 }
 
-export default Home
+export default Shirts

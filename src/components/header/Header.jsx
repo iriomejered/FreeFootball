@@ -8,7 +8,7 @@ function Header() {
       </div>
       <nav className="links-container">
         <ul>
-          <li><a href="#camisetas">Camisetas</a></li>
+          <li><a href="/shirts">Camisetas</a></li>
           <li><a href="#partidos">Partidos</a></li>
           <li><a href="#competiciones">Competiciones</a></li>
         </ul>
