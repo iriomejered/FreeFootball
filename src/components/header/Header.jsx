@@ -4,7 +4,9 @@ function Header() {
   return (
     <header className="header">
       <div className="logo-container">
-        <img src="logo.png" alt="Logo" className="logo" />
+        <a href="/home">
+          <img src="logo.png" alt="Logo" className="logo" />
+        </a>
       </div>
       <nav className="links-container">
         <ul>

@@ -1,17 +1,22 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { shirts } from '../../services/ShirtsService';
 import Shirt from './shirtCard/ShirtCard';
+import './ShirtsCards.css';
 
 function Shirts() {
   return (
     <>
-    <div>
-        {
+      <div className="shirts-background">
+        <div className="shirts-title">
+          <a>Compra tus camisetas favoritas</a>
+        </div>
+        <div className="shirts-array">
+          {
             shirts.map((shirt) => (
-                <Shirt image={shirt.image} name={shirt.name} price={shirt.price}/>
+              <Shirt image={shirt.image} name={shirt.name} price={shirt.price} />
             ))
-        }
-    </div>
+          }
+        </div>
+      </div>
     </>
   );
 }

@@ -1,17 +1,33 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+import * as React from 'react';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Typography from '@mui/material/Typography';
+import CardActionArea from '@mui/material/CardActionArea';
+import './ShirtCard.css';
 
 function Shirt(props) {
   return (
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={props.image} />
-      <Card.Body>
-        <Card.Title>{props.name}</Card.Title>
-        <Card.Text>{props.price}</Card.Text>
-        <Button variant="primary">Añadir al carrito</Button>
-      </Card.Body>
-    </Card>
+    <>
+      <div>
+        <div className="shirts-container">
+          <Card sx={{ width: 260 }}>
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                height="280"
+                image={props.image}
+                alt="image"
+              />
+              <CardContent>
+                <Typography variant="body2" fontFamily={'Poppins'} component="div">{props.name}</Typography>
+                <Typography variant="body1" fontFamily={'Poppins'} sx={{ color: 'text.secondary' }}>{props.price}</Typography>
+              </CardContent>
+            </CardActionArea>
+          </Card>
+        </div>
+      </div>
+    </>
   );
 }
 
