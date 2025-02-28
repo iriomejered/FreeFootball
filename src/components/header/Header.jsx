@@ -11,8 +11,8 @@ function Header() {
       <nav className="links-container">
         <ul>
           <li><a href="/shirts">Camisetas</a></li>
-          <li><a href="#partidos">Partidos</a></li>
-          <li><a href="#competiciones">Competiciones</a></li>
+          <li><a href="/matches">Partidos</a></li>
+          <li><a href="/competitions">Competiciones</a></li>
         </ul>
       </nav>
       <div className="login-container">

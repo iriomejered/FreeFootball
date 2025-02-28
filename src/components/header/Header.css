@@ -61,14 +61,29 @@
   }
   
   @media(max-width: 768px) {
-    .header {
-      flex-direction: column;
-      align-items: flex-start;
+    .logo{
+      height: 45px;
     }
-  
+
     .links-container ul {
-      flex-direction: column;
       gap: 10px;
+    }
+
+    .links-container li a {
+      font-size: 12px;
+    }
+
+    .header{
+      padding: 5px 10px;
+    }
+
+    .login-container{
+      width: 60px;
+    }
+
+    .login-button {
+      padding: 8px 8px;
+      font-size: 12px;
     }
   }
   

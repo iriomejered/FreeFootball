@@ -17,8 +17,8 @@
   }
   
   .news-img {
-    width: 100%;
-    height: 200px;
+    width: 16vw;
+    height: 10vw;
     border-radius: 8px;
   }
   
@@ -66,8 +66,9 @@
   }
   
   .medium-news-img {
-    width: 320px;
-    height: 100%;
+    width: 16vw;
+    height: 17vw;
+  
     border-radius: 8px;
     border-color: red;
   }
@@ -96,8 +97,8 @@
   }
   
   .big-news-img {
-    width: 800px;
-    height: 100%;
+    width: 50vw;
+    height: 30vw;
     border-radius: 8px;
   }
   
@@ -114,9 +115,6 @@
     color: rgb(0, 0, 0);
     padding-top: 20px;
   }
-
-  
-
 
   .news-img-container{
     transition: transform 0.3s ease;
