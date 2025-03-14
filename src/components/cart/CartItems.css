@@ -1,0 +1,59 @@
+.cart-background {
+    background-color: rgb(190, 190, 190);
+}
+
+.cart {
+    background-color: rgb(230, 230, 230);
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0px 5px 0px;
+}
+
+.cart p {
+    padding: 9vw;
+    font-size: 40px;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.quantity-controls button {
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.quantity-controls input {
+    width: 40px;
+    text-align: center;
+    margin: 0 5px;
+}
+
+.remove-button {
+    background-color: rgb(255, 64, 64);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.cart-total {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}

@@ -1,4 +1,4 @@
-import { shirts } from '../../services/ShirtsService';
+import { shirts } from '../../services/shirtsService';
 import Shirt from './shirtCard/ShirtCard';
 import './ShirtsCards.css';
 
@@ -12,7 +12,7 @@ function Shirts() {
         <div className="shirts-array">
           {
             shirts.map((shirt) => (
-              <Shirt image={shirt.image} name={shirt.name} price={shirt.price} />
+              <Shirt key={shirt.id} id={shirt.id} image={shirt.image} name={shirt.name} price={shirt.price} />
             ))
           }
         </div>
