@@ -5,7 +5,7 @@ import { useCart } from '../../services/cartService';
 
 function Header() {
   const { cart } = useCart();
-  const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+  const totalItems = Array.isArray(cart) ? cart.reduce((sum, item) => sum + (item.quantity || 0), 0) : 0;
 
   return (
     <header className="header">

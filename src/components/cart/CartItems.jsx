@@ -5,18 +5,22 @@ import './CartItems.css';
 function CartItems() {
   const { cart, updateQuantity, removeFromCart } = useCart();
 
-  const handleQuantityChange = (id, quantity) => {
+  const handleQuantityChange = async (id, quantity) => {
     if (quantity >= 0) {
-      updateQuantity(id, quantity);
+      await updateQuantity(id, quantity);
     }
   };
 
-  const handleRemove = (id) => {
-    removeFromCart(id);
+  const handleRemove = async (id) => {
+    await removeFromCart(id);
   };
 
   const calculateTotal = () => {
-    return cart.reduce((total, item) => total + parseFloat(item.price.replace('$', '')) * item.quantity, 0).toFixed(2);
+    return cart.reduce((total, item) => {
+      const price = item.price ? parseFloat(item.price.replace('$', '')) : 0;
+      const quantity = item.quantity || 0;
+      return total + (price * quantity);
+    }, 0).toFixed(2);
   };
 
   return (
