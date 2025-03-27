@@ -9,7 +9,7 @@
     margin: 0 auto;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    font-size: 25px;
+    font-size: clamp(10px, 2vw, 30px);
     text-align: center;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .quantity-controls input {
-    width: 40px;
+    width: clamp(25px, 4vw, 40px);
     text-align: center;
     margin: 0 5px;
 }

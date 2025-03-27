@@ -16,16 +16,12 @@ export function CartProvider({ children }) {
 
   useEffect(() => {
     const fetchCart = async () => {
-      try {
-        const cartRef = ref(database, 'cart');
-        const snapshot = await get(cartRef);
-        if (snapshot.exists()) {
-          const data = snapshot.val();
-          const cartArray = Object.keys(data).map(key => ({ id: key, ...data[key] }));
-          setCart(cartArray);
-        }
-      } catch (e) {
-        console.error('Error fetching cart: ', e);
+      const cartRef = ref(database, 'cart');
+      const snapshot = await get(cartRef);
+      if (snapshot.exists()) {
+        const data = snapshot.val();
+        const cartArray = Object.keys(data).map(key => ({ id: key, ...data[key] }));
+        setCart(cartArray);
       }
     };
 
@@ -44,18 +40,14 @@ export function CartProvider({ children }) {
         return [...prevCart, { ...shirt, quantity: 1 }];
       }
     });
-    try {
-      const cartRef = ref(database, `cart/${shirt.id}`);
-      const snapshot = await get(cartRef);
-      if (snapshot.exists()) {
-        const data = snapshot.val();
-        const newQuantity = Math.min(data.quantity + 1, 999);
-        await update(cartRef, { quantity: newQuantity });
-      } else {
-        await set(cartRef, { ...shirt, quantity: 1 });
-      }
-    } catch (e) {
-      console.error('Error adding document: ', e);
+    const cartRef = ref(database, `cart/${shirt.id}`);
+    const snapshot = await get(cartRef);
+    if (snapshot.exists()) {
+      const data = snapshot.val();
+      const newQuantity = Math.min(data.quantity + 1, 999);
+      await update(cartRef, { quantity: newQuantity });
+    } else {
+      await set(cartRef, { ...shirt, quantity: 1 });
     }
   };
 
@@ -66,22 +58,14 @@ export function CartProvider({ children }) {
         item.id === id ? { ...item, quantity: newQuantity } : item
       )
     );
-    try {
-      const itemRef = ref(database, `cart/${id}`);
-      await update(itemRef, { quantity: newQuantity });
-    } catch (e) {
-      console.error('Error updating document: ', e);
-    }
+    const itemRef = ref(database, `cart/${id}`);
+    await update(itemRef, { quantity: newQuantity });
   };
 
   const removeFromCart = async (id) => {
     setCart((prevCart) => prevCart.filter(item => item.id !== id));
-    try {
-      const itemRef = ref(database, `cart/${id}`);
-      await remove(itemRef);
-    } catch (e) {
-      console.error('Error removing document: ', e);
-    }
+    const itemRef = ref(database, `cart/${id}`);
+    await remove(itemRef);
   };
 
   return (

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+/* General styles for the header */
 .header {
   display: flex;
   justify-content: space-between;
@@ -17,6 +18,14 @@
 
 .logo {
   height: 65px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .links-container ul {
@@ -129,17 +138,66 @@
   text-align: center;
 }
 
-@media(max-width: 768px) {
+/* Responsive styles */
+@media (max-width: 800px) {
+  .menu-toggle {
+    display: block;
+  }
+
   .logo {
     height: 45px;
   }
 
+  .links-container {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+    border-top: 1px solid #ddd;
+    padding: 10px 0;
+  }
+
+  .links-container.open {
+    display: flex;
+    align-items: start;
+    padding-left: 12px;
+  }
+
   .links-container ul {
+    flex-direction: column;
     gap: 10px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .links-container li {
+    text-align: left;
   }
 
   .links-container li a {
-    font-size: 12px;
+    font-size: 14px;
+  }
+
+  /* .links-container .login-button {
+    width: 90%;
+    margin: 10px auto;
+    text-align: center;
+  } */
+
+  .cart-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .cart-button {
+    padding-right: 20px;
+  }
+  
+  .cart-count {
+    margin-right: 20px;
   }
 
   .header {

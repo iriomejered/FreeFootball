@@ -5,18 +5,18 @@
 .games-title {
     background-color: rgb(230, 230, 230);
     padding: 20px;
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
-    font-size: 30px;
+    font-size: clamp(20px, 2vw, 30px);
     text-align: center;
 }
 
 .games-date-container {
     background-color: rgb(230, 230, 230);
     padding-top: 30px;
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -25,18 +25,18 @@
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     padding: 5px;
-    width: 750px;
+    width: 65vw;
     margin: 0 auto;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    font-size: 20px;
+    font-size: clamp(14px, 2vw, 20px);
     text-align: center;
 }
 
 .games-array {
     padding-bottom: 50px;
     background-color: rgb(230, 230, 230);
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     flex-flow: column wrap;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 import { useCart } from '../../services/cartService';
@@ -6,6 +6,11 @@ import { useCart } from '../../services/cartService';
 function Header() {
   const { cart } = useCart();
   const totalItems = Array.isArray(cart) ? cart.reduce((sum, item) => sum + (item.quantity || 0), 0) : 0;
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
     <header className="header">
@@ -14,7 +19,8 @@ function Header() {
           <img src="logo.png" alt="Logo" className="logo" />
         </a>
       </div>
-      <nav className="links-container">
+
+      <nav className={`links-container ${isMenuOpen ? 'open' : ''}`}>
         <ul>
           <li><a href="/shirts">Camisetas</a></li>
           <li><a href="/matches">Partidos</a></li>
@@ -28,6 +34,9 @@ function Header() {
             <span className="cart-count">{totalItems}</span>
           </Link>
         </div>
+        <button className="menu-toggle" onClick={toggleMenu}>
+          ☰
+        </button>
         <div className="login-container">
           <button className="login-button">Iniciar Sesión</button>
         </div>
