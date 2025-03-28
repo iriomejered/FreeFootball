@@ -1,0 +1,107 @@
+<shirts>
+    <shirt>
+        <id>1</id>
+        <link>https://freefootball-82d2a.web.app/shirts#1</link>
+        <image>../../shirts/shirt-1.jpg</image>
+        <name>Camiseta Real Madrid 24/25</name>
+        <price>59.99$</price>
+    </shirt>
+    <shirt>
+        <id>2</id>
+        <link>https://freefootball-82d2a.web.app/shirts#2</link>
+        <image>../../shirts/shirt-2.jpg</image>
+        <name>Camiseta Barcelona 24/25</name>
+        <price>49.99$</price>
+    </shirt>
+    <shirt>
+        <id>3</id>
+        <link>https://freefootball-82d2a.web.app/shirts#3</link>
+        <image>../../shirts/shirt-3.jpg</image>
+        <name>Camiseta Atlético Madrid 24/25</name>
+        <price>54.99$</price>
+    </shirt>
+    <shirt>
+        <id>4</id>
+        <link>https://freefootball-82d2a.web.app/shirts#4</link>
+        <image>../../shirts/shirt-4.jpg</image>
+        <name>Camiseta Real Sociedad 24/25</name>
+        <price>44.99$</price>
+    </shirt>
+    <shirt>
+        <id>5</id>
+        <link>https://freefootball-82d2a.web.app/shirts#5</link>
+        <image>../../shirts/shirt-5.jpg</image>
+        <name>Camiseta Man City 24/25</name>
+        <price>69.99$</price>
+    </shirt>
+    <shirt>
+        <id>6</id>
+        <link>https://freefootball-82d2a.web.app/shirts#6</link>
+        <image>../../shirts/shirt-6.jpg</image>
+        <name>Camiseta Liverpool 24/25</name>
+        <price>64.99$</price>
+    </shirt>
+    <shirt>
+        <id>7</id>
+        <link>https://freefootball-82d2a.web.app/shirts#7</link>
+        <image>../../shirts/shirt-7.jpg</image>
+        <name>Camiseta Bayern Munich 24/25</name>
+        <price>74.99$</price>
+    </shirt>
+    <shirt>
+        <id>8</id>
+        <link>https://freefootball-82d2a.web.app/shirts#8</link>
+        <image>../../shirts/shirt-8.jpg</image>
+        <name>Camiseta PSG 24/25</name>
+        <price>79.99$</price>
+    </shirt>
+    <shirt>
+        <id>9</id>
+        <link>https://freefootball-82d2a.web.app/shirts#9</link>
+        <image>../../shirts/shirt-9.jpg</image>
+        <name>Camiseta Man United 24/25</name>
+        <price>69.99$</price>
+    </shirt>
+    <shirt>
+        <id>10</id>
+        <link>https://freefootball-82d2a.web.app/shirts#10</link>
+        <image>../../shirts/shirt-10.jpg</image>
+        <name>Camiseta Inter Milan 24/25</name>
+        <price>59.99$</price>
+    </shirt>
+    <shirt>
+        <id>11</id>
+        <link>https://freefootball-82d2a.web.app/shirts#11</link>
+        <image>../../shirts/shirt-11.jpg</image>
+        <name>Camiseta Dortmund 24/25</name>
+        <price>59.99$</price>
+    </shirt>
+    <shirt>
+        <id>12</id>
+        <link>https://freefootball-82d2a.web.app/shirts#12</link>
+        <image>../../shirts/shirt-12.jpg</image>
+        <name>Camiseta Ajax 24/25</name>
+        <price>49.99$</price>
+    </shirt>
+    <shirt>
+        <id>13</id>
+        <link>https://freefootball-82d2a.web.app/shirts#13</link>
+        <image>../../shirts/shirt-13.jpg</image>
+        <name>Camiseta Chelsea 24/25</name>
+        <price>69.99$</price>
+    </shirt>
+    <shirt>
+        <id>14</id>
+        <link>https://freefootball-82d2a.web.app/shirts#14</link>
+        <image>../../shirts/shirt-14.jpg</image>
+        <name>Camiseta Juventus 24/25</name>
+        <price>64.99$</price>
+    </shirt>
+    <shirt>
+        <id>15</id>
+        <link>https://freefootball-82d2a.web.app/shirts#15</link>
+        <image>../../shirts/shirt-15.jpg</image>
+        <name>Camiseta Benfica 24/25</name>
+        <price>59.99$</price>
+    </shirt>
+</shirts>

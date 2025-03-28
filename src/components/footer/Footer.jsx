@@ -1,6 +1,7 @@
 import './Footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faFacebook, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faRss } from '@fortawesome/free-solid-svg-icons';
 
 function Footer() {
     return (
@@ -41,6 +42,7 @@ function Footer() {
                             <a href="#"><FontAwesomeIcon icon={faTwitter}/></a>
                             <a href="#"><FontAwesomeIcon icon={faInstagram}/></a>
                             <a href="#"><FontAwesomeIcon icon={faYoutube}/></a>
+                            <a href="/shirts-rss.xml"><FontAwesomeIcon icon={faRss}/></a>
                         </div>
                     </div>
                 </div>
